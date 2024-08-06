@@ -1,0 +1,53 @@
+/* styles.css */
+
+/* WebKit browsers (Chrome, Safari) */
+input[type="range"]::-webkit-slider-thumb {
+    width: 20px;
+    height: 20px;
+    background: #3498db; /* Customize color */
+    cursor: pointer;
+    border-radius: 50%;
+    -webkit-appearance: none; /* Remove default styling */
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 2px;
+    background: #ddd; /* Customize track color */
+    border-radius: 2px;
+}
+
+/* Firefox */
+input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #3498db; /* Customize color */
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+input[type="range"]::-moz-range-track {
+    width: 100%;
+    height: 2px;
+    background: #ddd; /* Customize track color */
+    border-radius: 2px;
+}
+
+/* Edge */
+input[type="range"]::-ms-thumb {
+    width: 20px;
+    height: 20px;
+    background: #3498db; /* Customize color */
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+input[type="range"]::-ms-track {
+    width: 100%;
+    height: 2px;
+    background: #ddd; /* Customize track color */
+    border-radius: 2px;
+    background-color: transparent; /* Make the track transparent for Edge */
+    border-color: transparent; /* Make the track transparent for Edge */
+    color: transparent; /* Make the track transparent for Edge */
+}
