@@ -3,7 +3,7 @@ import Search from './Search';
 import Range from './Range';
 import ToggleList from './ToggleList';
 
-const MainHeader = ({sizeRange, strokeRange, handleSizeRange, handleStrokeRange, searchQuery, handleSearchQuery}) => {
+const MainHeader = ({sizeRange, strokeRange, handleSizeRange, handleStrokeRange, searchQuery, handleSearchQuery, handleContentView}) => {
     return (
         <div className='w-full mb-6'>
             <div className='flex flex-col items-center justify-between p-4 border border-gray-200 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700 lg:flex-row'>
@@ -30,7 +30,9 @@ const MainHeader = ({sizeRange, strokeRange, handleSizeRange, handleStrokeRange,
                     />
                 </div>
                 <div className='text-sm text-gray-600 dark:text-gray-400 flex justify-center items-center'>
-                    <ToggleList />
+                    <ToggleList 
+                        handleContentView = {handleContentView}
+                    />
 
                 </div>
 

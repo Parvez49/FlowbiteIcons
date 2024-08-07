@@ -1,6 +1,6 @@
 import React from "react";
 
-const LeftBar = () => {
+const LeftBar = ({handleProperty}) => {
   return (
     <div className="">
       <aside className="hidden lg:block col-span-1 bg-gray-50 rounded-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700 p-5 flex-1">
@@ -73,7 +73,7 @@ const LeftBar = () => {
           </h5>
           <ul>
             <li>
-              <button className="flex items-center justify-between w-full group">
+              <button className="flex items-center justify-between w-full group" onClick={()=>handleProperty('Solid')}>
                 <span className="flex items-center">
                   <div>
                     <svg
@@ -102,6 +102,7 @@ const LeftBar = () => {
               <button
                 type="button"
                 className="flex items-center justify-between group w-full"
+                onClick={()=>handleProperty('Outline')}
               >
                 <span className="flex items-center">
                   <div>
@@ -154,6 +155,7 @@ const LeftBar = () => {
               <button
                 type="button"
                 className="flex items-center justify-between group w-full"
+                onClick={()=>handleProperty('General')}
               >
                 <span className="flex items-center">
                   <div>
@@ -183,6 +185,7 @@ const LeftBar = () => {
               <button
                 type="button"
                 className="flex items-center justify-between group w-full"
+                onClick={()=>handleProperty('Arrows')}
               >
                 <span className="flex items-center">
                   <div>
@@ -216,6 +219,7 @@ const LeftBar = () => {
               <button
                 type="button"
                 className="flex items-center justify-between group w-full"
+                onClick={()=>handleProperty('Files')}
               >
                 <span className="flex items-center">
                   <div>
@@ -245,6 +249,7 @@ const LeftBar = () => {
               <button
                 type="button"
                 className="flex items-center justify-between group w-full"
+                onClick={()=>handleProperty('E-Commerce')}
               >
                 <span className="flex items-center">
                   <div>
@@ -274,6 +279,7 @@ const LeftBar = () => {
               <button
                 type="button"
                 className="flex items-center justify-between group w-full"
+                onClick={()=>handleProperty('Media')}
               >
                 <span className="flex items-center">
                   <div>
@@ -303,6 +309,7 @@ const LeftBar = () => {
               <button
                 type="button"
                 className="flex items-center justify-between group w-full"
+                onClick={()=>handleProperty('User')}
               >
                 <span className="flex items-center">
                   <div>
@@ -336,6 +343,7 @@ const LeftBar = () => {
               <button
                 type="button"
                 className="flex items-center justify-between group w-full"
+                onClick={()=>handleProperty('Brands')}
               >
                 <span className="flex items-center">
                   <div>
@@ -367,6 +375,7 @@ const LeftBar = () => {
               <button
                 type="button"
                 className="flex items-center justify-between group w-full"
+                onClick={()=>handleProperty('Emoji')}
               >
                 <span className="flex items-center">
                   <div>
@@ -408,6 +417,7 @@ const LeftBar = () => {
               <button
                 type="button"
                 className="flex items-center justify-between group w-full"
+                onClick={()=>handleProperty('Text')}
               >
                 <span className="flex items-center">
                   <div>
@@ -445,6 +455,7 @@ const LeftBar = () => {
               <button
                 type="button"
                 className="flex items-center justify-between group w-full"
+                onClick={()=>handleProperty('Weather')}
               >
                 <span className="flex items-center">
                   <div>
