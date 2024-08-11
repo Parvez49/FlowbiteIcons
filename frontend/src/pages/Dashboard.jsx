@@ -10,7 +10,7 @@ const Dashboard = () => {
     return (
         <div className='antialiased'>
             <div className='_next'>
-                <div className='flex flex-col'>
+                <div className='flex flex-col dark:bg-gray-800'>
                     <Header />
                     <main className=''>
                         <section className='px-4 mx-auto max-w-7xl'>

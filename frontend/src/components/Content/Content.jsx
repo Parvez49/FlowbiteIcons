@@ -157,7 +157,7 @@ const Content = ({ sizeRange, strokeRange, searchQuery, contentView }) => {
             return (
             <button
               key={ind}
-              className="relative border border-gray-100 dark:border-gray-800 rounded-lg flex items-center justify-center group hover:cursor-pointer h-[95px]"
+              className={`relative border border-gray-100 dark:border-gray-800 rounded-lg flex items-center group hover:cursor-pointer ${contentView === 'grid' ? 'h-[95px] justify-center' : 'h-[50px] justify-start'}`}
             >
               <div onClick={() => handleCopy(svgId)} className="absolute top-0 left-0 h-full w-full bg-[#1F2A37] rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-80 transition-opacity">
                 <div className="flex items-center">
